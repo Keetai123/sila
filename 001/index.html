@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฝึกพูดทางการแพทย์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ฝึกพูดทางการแพทย์</h1>
+        <p>ฝึกการสนทนาในสถานการณ์ต่างๆ ที่ใช้ในทางการแพทย์</p>
+    </header>
+
+    <section id="exercise">
+        <h2>ฝึกสนทนา</h2>
+        <div class="exercise-card">
+            <h3>การสอบถามอาการผู้ป่วย</h3>
+            <p>คำถาม: "คุณรู้สึกไม่สบายตรงไหนบ้าง?"</p>
+            <button onclick="playAudio('audio1')">ฟังตัวอย่างการพูด</button>
+            <audio id="audio1" src="question1.mp3"></audio>
+        </div>
+
+        <div class="exercise-card">
+            <h3>การให้คำแนะนำเกี่ยวกับการรักษา</h3>
+            <p>คำแนะนำ: "คุณควรรับประทานยาตามเวลาที่แพทย์กำหนดเพื่อผลลัพธ์ที่ดีที่สุด"</p>
+            <button onclick="playAudio('audio2')">ฟังตัวอย่างการพูด</button>
+            <audio id="audio2" src="advice1.mp3"></audio>
+        </div>
+
+        <div class="exercise-card">
+            <h3>การพูดกับญาติของผู้ป่วย</h3>
+            <p>คำพูด: "ตอนนี้ผู้ป่วยกำลังพักฟื้นและอยู่ในความดูแลของแพทย์อย่างใกล้ชิด"</p>
+            <button onclick="playAudio('audio3')">ฟังตัวอย่างการพูด</button>
+            <audio id="audio3" src="message1.mp3"></audio>
+        </div>
+    </section>
+
+    <section id="feedback">
+        <h2>ความคิดเห็นจากการฝึก</h2>
+        <textarea id="feedback-text" placeholder="กรุณาให้ข้อเสนอแนะเกี่ยวกับการฝึกนี้"></textarea>
+        <button onclick="submitFeedback()">ส่งความคิดเห็น</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ฝึกพูดทางการแพทย์</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
